@@ -132,3 +132,48 @@ button{
     width: 80vw;
     height:40vh;
 }
+
+/* utils */
+
+.green-border{
+    border:1em #12b886 solid;
+}
+
+.red-border{
+    border:0.4em #f85151 solid;
+}
+
+.red-line{
+    height: 1vh;
+    background-color: #f85151;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.box-pale{/*Make the border like you where drawing*/
+    background-color: #ffefe8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text-color-orange{
+    color:#ff702a;
+}
+
+.text-color-black{
+    color: black;
+}
+
+.circle-line{/*make the border like a circle and like if you where drawing*/
+    border:1em #12b886 ;/*solid in the future*/
+}
+
+.line-transition{/*make the transition*/
+    border-bottom:1em #ff702a solid;
+}
+
+.menu-icon{
+    display: none;
+}
