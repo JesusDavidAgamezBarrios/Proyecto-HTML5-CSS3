@@ -17,8 +17,14 @@ body{
 h1{
     font-size: 4em;
 }
+img{
+    width: 20%;
+}
 a{
     text-decoration: none;
+}
+input[type="checkbox"]{
+    visibility: hidden;
 }
 
 /*------------------header------------*/
@@ -58,4 +64,8 @@ ul{
 }
 #mobile-bar-menu,#menu-icon,#label-menu-icon{
     display:none;
+}
+/*-------------content------------*/
+#home,#about{
+    
 }
