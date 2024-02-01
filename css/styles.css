@@ -20,3 +20,42 @@ h1{
 a{
     text-decoration: none;
 }
+
+/*------------------header------------*/
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 4vh;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    background-color: #1e1d2b;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+#left-header{
+    width: 49%;
+    float: left;
+}
+#right-header{
+    width: 49%;
+    float: right;
+}
+#bar-menu{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#mobile-bar-menu,#menu-icon,#label-menu-icon{
+    display:none;
+}
