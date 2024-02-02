@@ -1,85 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-    z-index: 0;
-    margin: 0;
+*{  z-index: 0;
+    margin:0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     color: white;
 }
+
 body{
-    background-color:  #1e1d2b;
+    background-color: #1e1d2b;
 }
+
 #container{
+    /*width 100vw*/
+    /*height 4vh + */
     display: flex;
     flex-direction: column;
 }
+
 h1{
     font-size: 4em;
 }
+
 img{
     width: 50%;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 input[type="checkbox"]{
     visibility: hidden;
 }
 
+
+
 /*------------------header------------*/
 header{
-    position: fixed;
-    top: 0;
-    right: 0;
+    position:fixed;
+    top:0;
+    right:0;
     width: 100%;
     height: 4vh;
     z-index: 100;
     display: flex;
     flex-direction: row;
     background-color: #1e1d2b;
-
 }
+
 nav{
     display: flex;
     align-items: center;
     width: 100%;
 }
+
 ul{
     list-style: none;
 }
+
 #left-header{
     width: 49%;
-    float: left;
+    float:left;
 }
+
+
+
 #right-header{
     width: 49%;
-    float: right;
+    float:right;
 }
+
 #bar-menu{
-    width: 50vw;
+    width:50vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
+
 #mobile-bar-menu,#menu-icon,#label-menu-icon{
     display:none;
 }
-/*-------------content------------*/
-#home,#about{
-    height: 55vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-#menu,#services,#advertising{
-    height: 100vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
 
+/*-----------------content---------*/
+#home,#about{
+    height:55vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+#menu,#services,#advertising{
+    height:55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 #left-home,#about-left{
     width: 40vw;
     display: flex;
@@ -109,6 +127,7 @@ ul{
     display: flex;
     justify-content: space-evenly;
 }
+
 #services-menu il{
     display: flex;
     flex-direction: column;
@@ -133,6 +152,7 @@ button{
     height:40vh;
 }
 
+
 /* utils */
 
 .green-border{
@@ -150,7 +170,7 @@ button{
     margin-bottom: 2em;
 }
 
-.box-pale{/*Make the border like you where drawing*/
+.box-pale{
     background-color: #ffefe8;
     display: flex;
     flex-direction: column;
@@ -166,17 +186,27 @@ button{
     color: black;
 }
 
-.circle-line{/*make the border like a circle and like if you where drawing*/
-    border:1em #12b886 ;/*solid in the future*/
+.circle-line{
+    border:1em #12b886 ;
 }
 
-.line-transition{/*make the transition*/
+.line-transition{
     border-bottom:1em #ff702a solid;
 }
 
 .menu-icon{
     display: none;
 }
+@media only screen and (min-width: 800px) {
+    
+    ul li a:hover{
+        border-bottom: #ff702a 2px solid;
+        color: #ff702a;
+    
+    }
+}
+
+
 
 /*--------------- media -------------*/
 
@@ -258,7 +288,6 @@ button{
             
     }
 
-
     #home{
         height:100vh;
         display: flex;
@@ -273,11 +302,14 @@ button{
         padding-left: 0;
     }
     
+
+
     #left-home p {
         font-size: 3.5em;
         text-align: center;
         
     }
+
     #about{
         height:100vh;
         display: flex;
@@ -289,6 +321,10 @@ button{
     #about-right{
         width: 100%;
         align-items: center;
+    }
+
+    #about-right h1{
+        text-align: center;
     }
 
     #about-right p{
@@ -321,7 +357,7 @@ button{
     }
 
     #services{
-        height: 120vh;
+        height: 124vh;
         justify-content: flex-start;
     }
 
@@ -335,6 +371,8 @@ button{
 
     #services-menu il img{
         width: 30%;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
     }
 
     #services-menu il p{
@@ -352,4 +390,195 @@ button{
     #ad h1{
         font-size: 3em;
     }
+
+    #contact{
+        height: 80vh;
+        width: 30vw;
+        padding-left: 10vw;
+        flex-direction: column;
+    }
+
+    #contact-us{
+        width: 90vw;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #contact-us ul{
+        width: 30vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width:720px){
+    #menu h1{
+        font-size: 3.4em;
+    }
+    #ad h1{
+        font-size: 2.6em;
+    }
+
+    #about-right h1{
+        font-size: 3.8em;
+    }
+}
+
+@media (max-width:594px){
+    
+    #about-right{
+        height: 60%;
+        justify-content: space-between;
+    }
+
+    #about-right h1{
+        font-size: 3em;
+    }
+
+    #ad h1{
+        font-size: 2.1em;
+    }
+
+    #home p{
+        font-size: 3em;
+    }
+
+    #home h1{
+        font-size: 4.5em;
+    }
+
+    #services h1{
+        font-size: 3.5em;
+    }
+}
+@media (max-width:500px){
+    #home h1 {
+        font-size: 2.5em;
+    }
+    
+    #home p {
+        font-size: 1.8em;
+    }
+
+    img{
+        width: 130%;
+    }
+
+    #about-right h1 {
+        font-size: 1.9em;
+    }
+
+    #about-right p{
+        font-size: 1.1em;
+    }
+
+    #about-left{
+        width: 50%;
+        align-items: center;
+    }
+
+    #menu h1 {
+        font-size: 2.4em;
+    }
+
+    #services h1 {
+        font-size: 2.2em;
+    }
+    
+    #services-menu il p {
+        font-size: 1.3em;
+    }
+    
+    #ad h1 {
+        font-size: 1.4em;
+    }
+
+    #contact{
+        width: 60vw;
+    }
+
+    #contact-us ul {
+        width: 60vw;
+    }
+    
+}
+@media (max-width:320px){
+    #home h1{
+        font-size: 2em;
+    }
+
+    #home p{
+        font-size: 1.3em;
+    }
+
+    img{
+        width: 180%;
+    }
+
+    #about-right{
+        height: 40%;
+    }
+
+    #about-right h1{
+        font-size: 1.3em;
+    }
+
+    #about-right p{
+        font-size: 0.8em;
+    }
+
+    #about-right button{
+        width: 100px;
+        font-size:0.8em;
+    }
+    
+    #about-left{
+        align-items: center;
+    }
+
+    #menu h1{
+        font-size: 1.5em;
+    }
+
+    #shopping-menu il{
+        width: 50vw;
+    }
+
+    #services h1{
+        font-size: 1.5em;
+    }
+
+    #services-menu il p {
+        font-size: 0.9em;
+    }
+
+    #services-menu {
+        height: 90%;
+    }
+
+    #mobile-bar-menu li a h1{
+        font-size: 3em;
+    }
+
+    #ad{
+        height: 95vw;
+        width: 95vw;
+    }
+
+    #ad h1{
+        font-size: 1em;
+    }
+
+    #contact{
+        width: 60vw;
+    }
+
+    #contact-us ul {
+        width: 60vw;
+    }
+
+
 }
